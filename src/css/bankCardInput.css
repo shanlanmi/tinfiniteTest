@@ -1,0 +1,63 @@
+.inputTips-input {
+  background: url("../img/safeico.png") 5px center/6% no-repeat;
+  border-color: #1c1c1c;
+}
+.inputTips-input:focus {
+  border: 1px solid #07f;
+  outline: none;
+  -webkit-box-shadow: 0 0 5px #8cddff;
+  box-shadow: 0 0 5px #8cddff;
+}
+
+.inputTips-tips {
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: 662px;
+  height: 22px;
+  padding: 4px 3px 4px 25px;
+  font-size: 12px;
+  color: red;
+  line-height: 22px;
+  border: 1px solid red;
+  border-radius: 2px;
+  background: url("../img/errorico.png") 5px center/14px no-repeat, #fff5f5;
+}
+.inputTips-tips::before {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: -7px;
+  width: 7px;
+  height: 10px;
+  background: url("../img/ico.png") -16px -510px no-repeat;
+}
+
+.inputTips-legal {
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: 662px;
+  height: 22px;
+  padding: 4px 3px 4px 25px;
+  border-color: #1c1c1c;
+  background: url("../img/ico.png") -10px 8px no-repeat;
+}
+
+.inputTips-zoom {
+  position: absolute;
+  top: -10px;
+  left: 420px;
+  padding: 5px;
+  font-family: Microsoft YaHei, SimHei;
+  font-size: 16px;
+  background-color: #fffdca;
+  color: #f73200;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.5;
+  border: 1px solid #facf66;
+}
+
+/*# sourceMappingURL=bankCardInput.css.map */

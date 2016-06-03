@@ -32,7 +32,8 @@
 //===============> 组件 <===============
 (function () {
   "use strict";
-  require("bankCardInput!sass!./../bankCardInput.sass");
+  //require("style!css!../css/bankCardInput.css");
+  require("../sass/bankCardInput.sass");
   var errorico = document.createElement('img');
   errorico.src = require("../img/errorico.png");
   var ico = document.createElement('img');

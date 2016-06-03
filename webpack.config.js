@@ -17,7 +17,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            //{ test: /\.css$/, loader: 'style-loader!css-loader' },
+            { test: /\.css$/, loader: 'style-loader!css-loader' },
             { test: /\.js$/, loader: 'jsx-loader?harmony' },
             { test: /\.sass$/, loader: 'style!css!sass?sourceMap'},
             { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}

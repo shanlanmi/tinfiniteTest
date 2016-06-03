@@ -4,21 +4,20 @@
   "description": "1. 一个银行卡号的输入组件。 1. 提示此表单为必填，focus 后未填，给出提示 \"请填写银行卡号。\"。 1. 输入时，输入信息绑定到提示信息上。 1. 提示信息按照银行卡号格式输出。 1. 输入完毕后，给出表单验证反馈。   1. 若输入错误数据，给出提示 \"银行卡号是12－19位数字。\"。   1. 若输入非纯数字，给出提示 \"无法识别您的卡号，请填写正确的银行卡卡号。\"。   1. 若输入正确，显示正确提示。",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "css": "^2.2.1",
-    "jasmine-core": "^2.4.1",
-    "jsx": "^0.9.89",
+    "css-loader": "^0.23.1",
     "jsx-loader": "^0.13.2",
-    "karma": "^0.13.22",
-    "karma-chrome-launcher": "^1.0.1",
     "karma-jasmine": "^1.0.2",
+    "node-sass": "^3.7.0",
     "sass": "^0.5.0",
-    "style": "0.0.3",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1"
   },
