@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="src/css/demo.css">
+<title>Tinfinite 前端初试题 - 卡号输入UI组件</title>
+</head>
+
+<body>
+  <div class="demo-form">
+    <label for="bankId">银行卡卡号</label>
+    <input id="bankId" type="text" autocomplete="off" required>
+    <p>输入卡号后会智能识别银行和卡种，<a href="#">银行卡要求</a></p>
+  </div>
+  <div class="demo-form">
+    <label for="bankId2">银行卡卡号（无输入提示）</label>
+    <input id="bankId2" type="text" autocomplete="off" required>
+    <p>输入卡号后会智能识别银行和卡种，<a href="#">银行卡要求</a></p>
+  </div>
+<script type="text/javascript" src="dist/bankCardInput.js" charset="utf-8"></script>
+<script>
+var bankIdTips = {
+  node: "#bankId",
+  isEmpty: "请填写银行卡号。",
+  isErrDigit: "银行卡号是12－19位数字。",
+  isNotCard: "无法识别您的卡号，请填写正确的银行卡卡号。",
+  isTyping: true,
+  requestUrl: 'checkUrl.php',
+  requestId: 'bankId'
+};
+inputTipsTools(bankIdTips);
+
+
+var bankId2Tips = {
+  node: "#bankId2",
+  isEmpty: "请填写银行卡号。",
+  isErrDigit: "银行卡号是12－19位数字。",
+  isNotCard: "无法识别您的卡号，请填写正确的银行卡卡号。",
+  isTyping: false,
+  requestUrl: 'checkUrl.php',
+  requestId: 'bankId'
+};
+inputTipsTools(bankId2Tips);
+</script>
+</body>
+
+</html>
+
+

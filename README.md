@@ -15,7 +15,6 @@
 ### 使用方法
 1. 在 html 页面引入组件
   ```HTML
-  <link rel="stylesheet" href="bankCardInput.css">
   <script src="bankCardInput.js"></script>
   ```
 1. 参数设置

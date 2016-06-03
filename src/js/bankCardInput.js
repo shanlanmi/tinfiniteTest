@@ -1,15 +1,45 @@
 //===============> 数据接口 <===============
 /*
-function(agr1, agr2);
-- agrument explain
-  var agr1 = '';
-- agrument explain
-  var agr2 = '';
+
+1. 参数设置
+  var bankIdTips = {
+    // input 元素的 id
+    node: "#bankId",
+
+    // 检测到未输入的提示信息。
+    isEmpty: "请填写银行卡号。",
+
+    // 检测到输入错误位数的提示信息。
+    isErrDigit: "银行卡号是12－19位数字。",
+    
+    // 检测到输入非银行卡的提示信息。
+    isNotCard: "无法识别您的卡号，请填写正确的银行卡卡号。",
+
+    // 是否显示同步输入提示。
+    isTyping: true,
+
+    // 检测银行卡号请求的 url
+    requestUrl: 'checkUrl.php',
+
+    // 检测银行卡号的请求参数
+    requestId: 'bankId'
+  };
+
+2. 调用
+  inputTipsTools(bankIdTips);
 */
 
 //===============> 组件 <===============
 (function () {
   "use strict";
+  require("bankCardInput!sass!./../bankCardInput.sass");
+  var errorico = document.createElement('img');
+  errorico.src = require("../img/errorico.png");
+  var ico = document.createElement('img');
+  ico.src = require("../img/ico.png");
+  var safeico = document.createElement('img');
+  safeico.src = require("../img/safeico.png");
+
   window.inputTipsTools = function(option) {
     // 选择器
     var $ = function(x){ return document.querySelector(x); };
